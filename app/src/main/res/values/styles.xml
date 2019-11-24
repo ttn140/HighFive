@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -14,13 +14,11 @@
     </style>
 
     <style name="AppButton" parent="Widget.MaterialComponents.Button">
-        <item name="android:background">@drawable/round_edge_rectangle</item>
         <item name="android:textColor">@color/colorTextPrimary</item>
         <item name="android:textSize">18sp</item>
     </style>
 
     <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/text_input_layout_box_color</item>
         <item name="android:textColorHint">@color/colorTextPrimary</item>
         <item name="android:textColor">@color/colorTextPrimary</item>
 
