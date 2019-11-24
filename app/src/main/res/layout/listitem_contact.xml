@@ -1,21 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="16dp"
-    android:orientation="horizontal">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/imageview_profile"
-        android:src="@drawable/ic_add_black_24dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Headline"
-        tools:text="@string/app_name"
-        android:layout_gravity="center"
-        android:layout_marginStart="16dp"/>
+    android:layout_margin="8dp"
+    android:minHeight="200dp">
 
-</LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:id="@+id/imageview_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/colorAccent"
+            tools:src="@drawable/ic_add_black_24dp"
+            android:contentDescription="@string/contact_profile_picture_content_description"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview_thumbnail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            tools:src="@drawable/ic_add_black_24dp"
+            tools:background="@color/colorAccent"
+            app:layout_constraintTop_toBottomOf="@id/imageview_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/contact_profile_picture_content_description"/>
+
+        <TextView
+            android:id="@+id/textview_user_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/imageview_thumbnail"
+            app:layout_constraintTop_toTopOf="@id/imageview_thumbnail"
+            tools:text="User Name" />
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@id/button_call"
+            app:layout_constraintStart_toStartOf="@id/textview_user_name"
+            app:layout_constraintTop_toBottomOf="@id/textview_user_name"
+            tools:text="Company Inc." />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/call_button"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/button_call"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/email_button"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/button_call"
+            app:layout_constraintTop_toTopOf="@id/button_call"
+            android:id="@+id/button_email"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
