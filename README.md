@@ -35,3 +35,7 @@ What do you see as the main challenge in building this app ?
     Time
     Lack of knowledge about NFCs
     Lack of knowledge about QR codes.
+
+WireFrame https://xd.adobe.com/view/f1c1e43b-b63f-45d7-554c-29bc67bb0ff4-87f0/
+
+Trello Board https://trello.com/b/1JSLF3BP/highfive-application
