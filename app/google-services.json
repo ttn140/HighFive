@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "103504978095",
+    "firebase_url": "https://highfive-a7f54.firebaseio.com",
+    "project_id": "highfive-a7f54",
+    "storage_bucket": "highfive-a7f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103504978095:android:d8db7e77312806a18a745a",
+        "android_client_info": {
+          "package_name": "com.example.highfive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103504978095-l87e81hfingkv0btjaeqev5ltnb4f4vh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwGHM6bpT1fjYCAaacB3DbnHyWggD5d6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103504978095-l87e81hfingkv0btjaeqev5ltnb4f4vh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

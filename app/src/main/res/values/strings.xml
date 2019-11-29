@@ -3,4 +3,9 @@
     <string name="call_button">CALL</string>
     <string name="email_button">EMAIL</string>
     <string name="contact_profile_picture_content_description">Contact Profile Picture</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="create_account">Create Account</string>
+    <string name="cd_logo">App Logo</string>
 </resources>
