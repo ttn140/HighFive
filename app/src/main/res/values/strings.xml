@@ -3,4 +3,23 @@
     <string name="call_button">CALL</string>
     <string name="email_button">EMAIL</string>
     <string name="contact_profile_picture_content_description">Contact Profile Picture</string>
+    <string name="buttonNFC">NFC</string>
+    <string name="buttonQR">QR</string>
+    <string name="transferMessage">How would you like to transfer business cards?</string>
+    <string name="buttonEditNotes">Edit Notes</string>
+    <string name="noteHint">write a note about this contact</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="cancel">Cancel</string>
+    <string name="job_title">Job Title</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="companyName">Company Name</string>
+    <string name="companyAddress">Address</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="phone">phone</string>
+    <string name="save">Save</string>
 </resources>
