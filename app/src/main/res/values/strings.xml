@@ -8,4 +8,14 @@
     <string name="log_in">Log In</string>
     <string name="create_account">Create Account</string>
     <string name="cd_logo">App Logo</string>
+    <string name="first_name_required">First Name (Required)</string>
+    <string name="last_name_required">Last Name (Required)</string>
+    <string name="email_required">Email (Required)</string>
+    <string name="password_required">Password (Required)</string>
+    <string name="phone_required">Phone (Required)</string>
+    <string name="website_url">Website URL</string>
+    <string name="company">Company</string>
+    <string name="job_title">Job Title</string>
+    <string name="submit">Submit</string>
+    <string name="notes">Notes</string>
 </resources>
