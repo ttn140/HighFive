@@ -9,11 +9,11 @@ data class Contact( var userId: String,
                     var lastName: String,
                     var email: String,
                     var phone: String,
-                    var website: String,
-                    var company: String,
-                    var jobTitle: String,
-                    var picture: String,
-                    var notes: String,
-                    var connections: ArrayList<String>) : Parcelable {
+                    var website: String?,
+                    var company: String?,
+                    var jobTitle: String?,
+                    var picture: String?,
+                    var notes: String?,
+                    var connections: ArrayList<String>?) : Parcelable {
     constructor() : this("", "","","","","","","","","", ArrayList())
 }
