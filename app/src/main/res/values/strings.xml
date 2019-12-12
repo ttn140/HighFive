@@ -18,4 +18,12 @@
     <string name="job_title">Job Title</string>
     <string name="submit">Submit</string>
     <string name="notes">Notes</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="rolodex">Rolodex</string>
+    <string name="my_profile">My Profile</string>
+    <string name="send_by_nfc">Send by NFC</string>
+    <string name="send_by_qr">Send by QR</string>
+    <string name="save_note">Save Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="log_out">Log Out</string>
 </resources>

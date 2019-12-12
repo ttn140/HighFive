@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewUserProfile"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="Tammy Nguyen" />
+
+    <TextView
+        android:id="@+id/textViewCompany"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        tools:text="Ally" />
+
+    <TextView
+        android:id="@+id/textViewJobTitle"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        tools:text="Android Developer" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        tools:text="ttn140@gmail.com" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        tools:text="(704) 701-9815" />
+
+    <TextView
+        android:id="@+id/textViewWebsite"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="https://www.loux.io/" />
+
+    <TextView
+        android:id="@+id/textViewNotes"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        tools:text="This is someone I want to work with" />
+
+    <Button
+        android:id="@+id/buttonAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:text="@string/edit_note" />
+
+
+</LinearLayout>

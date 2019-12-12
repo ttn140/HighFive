@@ -16,7 +16,6 @@ class CurrentUser() {
         val COMPANY = "company"
         val JOB_TITLE = "jobTitle"
         val PICTURE = "picture"
-        val NOTES = "notes"
         val CONNECTIONS = "connections"
         private var sharedPreferences: SharedPreferences? = null
 
@@ -27,14 +26,14 @@ class CurrentUser() {
             }
         }
 
-        fun read(key: String): String? {
-            return sharedPreferences!!.getString(key, "")
+        fun read(key: String): String {
+            return sharedPreferences?.getString(key, "") ?: ""
         }
 
         fun write(key: String, value: String) {
             val editor = sharedPreferences!!.edit()
             editor.putString(key, value)
-            editor.commit()
+            editor.apply()
         }
 
         fun clearUser() {
@@ -42,7 +41,7 @@ class CurrentUser() {
             editor.clear().apply()
         }
 
-        fun writeArray(array: ArrayList<String>){
+        fun writeArray(array: ArrayList<Connection>) {
             val gson = Gson()
             val json = gson.toJson(array)
             val editor = sharedPreferences!!.edit()
@@ -50,17 +49,22 @@ class CurrentUser() {
             editor.apply()
         }
 
-        fun readArray(): ArrayList<String> {
+        fun readArray(): ArrayList<Connection> {
             val gson = Gson()
-            val json = sharedPreferences!!.getString(CONNECTIONS, null)
-            val type = object : TypeToken<ArrayList<String>>() {
+            val json = sharedPreferences?.getString(CONNECTIONS, "") ?: ""
+            return if(!json.isBlank()){
+                val type = object : TypeToken<ArrayList<Connection>>() {
 
-            }.type
-            return gson.fromJson(json, type)
+                }.type
+                gson.fromJson(json, type)
+            } else {
+                ArrayList()
+            }
+
         }
 
-        val user: Contact
-            get() = Contact(
+        val user: User
+            get() = User(
                 read(USER_ID) ?: "",
                 read(FIRST_NAME) ?: "",
                 read(LAST_NAME) ?: "",
@@ -70,11 +74,10 @@ class CurrentUser() {
                 read(COMPANY),
                 read(JOB_TITLE),
                 read(PICTURE),
-                read(NOTES),
                 readArray()
             )
 
-        fun setUser(user: Contact){
+        fun setUser(user: User) {
             write(USER_ID, user.userId)
             write(FIRST_NAME, user.firstName)
             write(LAST_NAME, user.lastName)
@@ -84,7 +87,6 @@ class CurrentUser() {
             write(COMPANY, user.company ?: "")
             write(JOB_TITLE, user.jobTitle ?: "")
             write(PICTURE, user.picture ?: "")
-            write(NOTES, user.notes ?: "")
             writeArray(user.connections ?: ArrayList())
 
         }
